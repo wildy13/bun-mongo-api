@@ -10,21 +10,25 @@ Struktur proyek ini mengikuti arsitektur backend yang bersih dan skalabel menggu
 
 ```
 my-bun-app/
-├── bun.lockb              # Bun lock file / File kunci package dari Bun
-├── package.json           # Project metadata and scripts / Metadata proyek dan skrip
-├── tsconfig.json          # TypeScript config (optional) / Konfigurasi TypeScript (opsional)
-├── .env                   # Environment variables / Variabel lingkungan
-├── public/                # Static assets (images, CSS, etc) / File statis
-├── src/                   # Application source code / Kode sumber aplikasi
-│   ├── index.ts           # Server entry point / Titik masuk server
-│   ├── routes/            # HTTP routes / Routing HTTP
-│   ├── controllers/       # Route logic handlers / Penanganan logika untuk setiap route
-│   ├── services/          # Business logic and integrations / Logika bisnis & integrasi eksternal
-│   ├── models/            # Data schemas or ORM models / Skema data atau model ORM
-│   ├── middlewares/       # HTTP middlewares / Middleware HTTP
-│   └── utils/             # Utility/helper functions / Fungsi bantu
-├── tests/                 # Unit & integration tests / Pengujian unit & integrasi
-└── README.md              # Project documentation / Dokumentasi proyek
+├── bun.lockb                 # Bun lock file / File kunci package dari Bun
+├── package.json              # Project metadata and scripts / Metadata proyek dan skrip
+├── tsconfig.json             # TypeScript config (optional) / Konfigurasi TypeScript (opsional)
+├── .env                      # Environment variables / Variabel lingkungan
+├── src/                      # Application source code / Kode sumber aplikasi
+│   ├── index.ts              # Server entry point / Titik masuk server
+|   ├── api                   # Folder API, berisi modul-modul route
+        ├── Modules           # Contoh modul API modules
+            ├─ controllers.ts # Route logic handlers / Penanganan
+            ├─ index.ts       # Route Logic for Modules
+            ├─ models.ts      # Data schemas or ORM models / Skema
+            ├─ services.ts    # Business logic and integrations / Logika bisnis & integrasi eksternal
+            └── types.ts      # Mendefinisikan tipe dan interface TypeScript yang digunakan di berbagai modul aplikasi.
+        └── ...               # Modul API lain
+│   ├── middlewares/          # HTTP middlewares / Middleware HTTP
+│   ├── routes/               # HTTP routes / Routing HTTP
+│   └── utils/                # Utility/helper functions / Fungsi bantu
+├── tests/                    # Unit & integration tests / Pengujian unit & integrasi
+└── README.md                 # Project documentation / Dokumentasi proyek
 ```
 
 ---
