@@ -31,27 +31,6 @@ my-bun-app/
 └── README.md                 # Project documentation / Dokumentasi proyek
 ```
 
----
-
-## 🧩 Folder Descriptions / Deskripsi Folder
-
-| Folder/File       | Description (EN)                                                                 | Deskripsi (ID)                                                       |
-|-------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| `src/index.ts`    | Main file where the Bun server starts                                           | File utama tempat server Bun dijalankan                             |
-| `src/routes/`     | Defines all HTTP routes (e.g., `/user`, `/auth`)                                | Mendefinisikan semua rute HTTP (contoh: `/user`, `/auth`)           |
-| `src/controllers/`| Contains functions that handle each route logic                                 | Menyimpan fungsi penanganan logika tiap rute                         |
-| `src/services/`   | Contains business logic and external API/database interaction                   | Berisi logika bisnis dan integrasi dengan API/database               |
-| `src/models/`     | Defines data structures, ORM schemas, or validation schemas                     | Mendefinisikan struktur data, schema ORM, atau validasi data         |
-| `src/middlewares/`| Middlewares for tasks like auth, logging, validation                            | Middleware seperti autentikasi, logging, validasi                    |
-| `src/utils/`      | Helper functions reused across the app                                          | Fungsi bantu yang digunakan di berbagai bagian aplikasi              |
-| `public/`         | Static files (e.g., images, favicon) served directly                            | File statis (seperti gambar, favicon) yang disajikan langsung        |
-| `tests/`          | Tests for services, routes, and utilities using `bun test`                      | Tempat untuk pengujian layanan, rute, dan utilitas dengan `bun test` |
-| `.env`            | Store sensitive configuration (e.g., DB credentials, API keys)                  | Menyimpan konfigurasi sensitif (contoh: kredensial DB, API key)      |
-| `package.json`    | Defines project name, dependencies, and scripts                                 | Mendefinisikan nama proyek, dependensi, dan skrip                    |
-| `bun.lockb`       | Lock file to ensure consistent dependency versions                              | File kunci agar versi dependensi tetap konsisten                     |
-
----
-
 ## 🚀 Getting Started
 
 ### Install dependencies
