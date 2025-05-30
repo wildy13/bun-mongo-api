@@ -10,8 +10,15 @@ export async function getModule(id: string) {
 }
 
 export async function createModule(data: Partial<Module>) {
+    for (const [key, value] of Object.entries(data)) {
+        if (typeof value !== 'string') {
+            throw new Error(`Property '${key}' must be a string`);
+        }
+    }
+
     const module = new ModuleModel(data);
     return module.save();
+
 }
 
 export async function updateModule(id: string, data: Partial<Module>) {
