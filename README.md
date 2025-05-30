@@ -55,12 +55,12 @@ bun test
 
 ## ✅ Notes / Catatan
 
-- Use `hostname: "0.0.0.0"` in `Bun.serve` to allow external access via local network.  
-  Gunakan `hostname: "0.0.0.0"` pada `Bun.serve` agar bisa diakses dari jaringan lokal.
-- Bun supports TypeScript out of the box, no need for extra transpilers.  
-  Bun mendukung TypeScript langsung, tanpa perlu transpiler tambahan.
-- You can customize this structure based on your project needs.  
-  Struktur ini bisa disesuaikan dengan kebutuhan proyekmu.
+- Use `hostname: "0.0.0.0"` in `Bun.serve` to allow external access via local network.
+Use `hostname: "0.0.0.0"` in `Bun.serve` to allow external access via local network.
+- Bun supports TypeScript out of the box, no need for extra transpilers.
+Bun supports TypeScript out of the box, no need for extra transpilers.
+- You can customize this structure based on your project needs.
+This structure can be customized based on your project needs.
 
 ---
 
@@ -70,5 +70,3 @@ bun test
 - [Bun GitHub Repo](https://github.com/oven-sh/bun)
 
 ---
-
-Happy hacking! 🎉 / Selamat ngoding! 👩‍💻👨‍💻
