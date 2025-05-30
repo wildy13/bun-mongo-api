@@ -1,6 +1,6 @@
 export interface Module {
     number: string;
     name: string;
-    version: number;
+    version: string;
     url: string
 }

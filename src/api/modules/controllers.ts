@@ -18,6 +18,9 @@ export async function createModule(req: Request): Promise<Response> {
     try {
         type UserInput = Partial<Module>;
         const data: UserInput = await req.json() as UserInput;
+
+        //console.log(typeof data.version, data);
+        //return new Response('berhasil', { status: 201 });
         const newUser = await moduleService.createModule(data);
         return new Response(JSON.stringify(newUser), { status: 201 });
     } catch (err) {
