@@ -3,6 +3,6 @@ export async function auth(req: Request, next: () => Promise<Response>): Promise
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
     return new Response("Unauthorized", { status: 401 });
   }
-  // bisa tambahkan validasi token di sini
+  // can add cookies here
   return next();
 }

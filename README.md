@@ -6,7 +6,7 @@ Struktur proyek ini mengikuti arsitektur backend yang bersih dan skalabel menggu
 
 ---
 
-## 📁 Project Structure / Struktur Proyek
+## 📁 Project Structure
 
 ```
 my-bun-app/

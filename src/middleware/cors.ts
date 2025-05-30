@@ -3,7 +3,7 @@ export async function cors(req: Request, next: () => Promise<Response>): Promise
     const headers = new Headers(res.headers);
 
     const allowedOrigins = [
-        process.env.BACKEND_API
+        process.env.FRONTEND_API
     ];
 
     const origin = req.headers.get("Origin");
