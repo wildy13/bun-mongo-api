@@ -9,7 +9,7 @@ Struktur proyek ini mengikuti arsitektur backend yang bersih dan skalabel menggu
 ## 📁 Project Structure
 
 ```
-my-bun-app/
+bun-mongo-api/
 ├── bun.lock                      # Bun lockfile for managing dependency consistency
 ├── package.json                  # Project metadata and script definitions
 ├── tsconfig.json                 # TypeScript configuration file (optional)
