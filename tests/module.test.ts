@@ -14,7 +14,7 @@ describe("Module API", () => {
         _id: string,
         number: string;
         name: string;
-        version: number;
+        version: string;
         url: string
     }
 
@@ -26,7 +26,7 @@ describe("Module API", () => {
                 _id: "1",
                 number: "VTD-AUT-01-03",
                 name: "3 Stroke Petrol Engine",
-                version: 1.0,
+                version: "1.0",
                 url: "http://localhost/SMK/test.zip",
             }),
         });
@@ -38,7 +38,7 @@ describe("Module API", () => {
         expect(json._id).toBeDefined();
         expect(json.number).toBe("VTD-AUT-01-03");
         expect(json.name).toBe("3 Stroke Petrol Engine");
-        expect(json.version).toBe(1.0);
+        expect(json.version).toBe("1.0");
         expect(json.url).toBe("http://localhost/SMK/test.zip");
         createdModuleId = json._id;
 
