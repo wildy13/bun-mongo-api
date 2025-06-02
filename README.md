@@ -10,25 +10,25 @@ Struktur proyek ini mengikuti arsitektur backend yang bersih dan skalabel menggu
 
 ```
 my-bun-app/
-├── bun.lockb                     # Bun lock file / File kunci package dari Bun
-├── package.json                  # Project metadata and scripts / Metadata proyek dan skrip
-├── tsconfig.json                 # TypeScript config (optional) / Konfigurasi TypeScript (opsional)
-├── .env                          # Environment variables / Variabel lingkungan
-├── src/                          # Application source code / Kode sumber aplikasi
-│    ├── index.ts                 # Server entry point / Titik masuk server
-|    ├── api                      # Folder API, berisi modul-modul route
-│    │    ├── Modules             # Contoh modul API modules
-│    │    │    ├─ controllers.ts  # Route logic handlers / Penanganan
-│    │    │    ├─ index.ts        # Route Logic for Modules
-│    │    │    ├─ models.ts       # Data schemas or ORM models / Skema
-│    │    │    ├─ services.ts     # Business logic and integrations / Logika bisnis & integrasi eksternal
-│    │    │    └── types.ts       # Mendefinisikan tipe dan interface TypeScript yang digunakan di berbagai modul aplikasi.
-│    │    └── ...                 # Modul API lain
-│    ├── middlewares/             # HTTP middlewares / Middleware HTTP
-│    ├── routes/                  # HTTP routes / Routing HTTP
-│    └── utils/                   # Utility/helper functions / Fungsi bantu
-├── tests/                        # Unit & integration tests / Pengujian unit & integrasi
-└── README.md                     # Project documentation / Dokumentasi proyek
+├── bun.lock                      # Bun lockfile for managing dependency consistency
+├── package.json                  # Project metadata and script definitions
+├── tsconfig.json                 # TypeScript configuration file (optional)
+├── .env                          # Environment variable definitions
+├── src/                          # Main application source code
+│    ├── index.ts                 # Server entry point
+|    ├── api                      # API module directory
+│    │    ├── Modules             # Example API modules
+│    │    │    ├─ controllers.ts  # Handles route logic and request processing
+│    │    │    ├─ index.ts        # Module route entry point
+│    │    │    ├─ models.ts       # Data models or schema definitions (e.g., ORM)
+│    │    │    ├─ services.ts     # Business logic and external integrations
+│    │    │    └── types.ts       # Shared TypeScript types and interfaces
+│    │    └── ...                 # Additional API modules
+│    ├── middlewares/             # HTTP middleware functions
+│    ├── routes/                  # Route definitions for API endpoints
+│    └── utils/                   # General utility and helper functions
+├── tests/                        # Unit and integration test cases
+└── README.md                     # Project documentation and usage instructions
 ```
 
 ## 🚀 Getting Started
