@@ -1,5 +1,6 @@
 import * as moduleService from "./services";
 import type { Module } from "./types";
+import mongoose from 'mongoose';
 
 export async function getModules(): Promise<Response> {
     const users = await moduleService.getModules();
@@ -24,7 +25,7 @@ export async function createModule(req: Request): Promise<Response> {
         const newUser = await moduleService.createModule(data);
         return new Response(JSON.stringify(newUser), { status: 201 });
     } catch (err) {
-        return new Response(`Invalid Data : ${err}`, { status: 400 });
+        return new Response(`${err}`, { status: 400 });
     }
 }
 
