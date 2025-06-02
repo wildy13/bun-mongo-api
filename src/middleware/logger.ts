@@ -12,6 +12,6 @@ export function logger(req: Request, next: () => Promise<Response>): Promise<Res
         second: "2-digit",
     }).format(new Date());
 
-    console.log(`[${time}] ${req.method} ${req.url} by ${userAgent}`);
+    console.log(`[${time}] ${req.method} ${req.url}`);
     return next();
 }
