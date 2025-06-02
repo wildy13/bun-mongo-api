@@ -42,7 +42,7 @@ bun install
 ### Run the development server
 
 ```bash
-bun run src/index.ts
+bun run dev
 ```
 
 ### Run tests
