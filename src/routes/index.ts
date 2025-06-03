@@ -4,8 +4,7 @@ export async function Route(req: Request): Promise<Response> {
 
     const url = new URL(req.url);
     const { pathname } = url;
-
-    if(pathname.startsWith("/module")){
+    if(pathname.startsWith("/api/module")){
         return moduleRoute.Route(req);
     }
 

@@ -5,11 +5,11 @@ export async function Route(req: Request): Promise<Response> {
     const { pathname } = url;
     const method = req.method;
 
-    if ((pathname === "/module" || pathname === "/module/") && method === "GET") {
+    if ((pathname === "/api/module" || pathname === "/api/module/") && method === "GET") {
         return moduleController.getModules();
     }
 
-    if ((pathname === "/module" || pathname === "/module/") && method === "POST") {
+    if ((pathname === "/api/module" || pathname === "/api/module/") && method === "POST") {
         return moduleController.createModule(req);
     }
 
