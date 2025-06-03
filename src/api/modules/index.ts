@@ -16,7 +16,7 @@ export async function Route(req: Request): Promise<Response> {
     const moduleIdMatch = pathname.match(/^\/module\/([^\/]+)$/);
     if (moduleIdMatch) {
         const id = moduleIdMatch[1];
-        if (!id) return new Response("Invalid user id", { status: 400 });
+        if (!id) return new Response("Invalid module id", { status: 400 });
 
         if (method === "GET") {
             return moduleController.getModuleById(id);

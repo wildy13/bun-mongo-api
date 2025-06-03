@@ -1,6 +1,4 @@
 export function logger(req: Request, next: () => Promise<Response>): Promise<Response> {
-    const userAgent = req.headers.get("user-agent");
-
     const time = new Intl.DateTimeFormat("id-ID", {
         timeZone: "Asia/Jakarta",
         hour12: false,
